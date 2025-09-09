@@ -1,0 +1,22 @@
+description: Raw payment data from Airbyte
+database: prd-dagen
+schema: demo_miguel
+tables:
+- name: airbyte_raw_customers
+  description: Raw customer data with JSON payload
+- name: airbyte_raw_transactions
+  description: Raw transaction data with JSON payload
+- name: airbyte_raw_payment_methods
+  description: Raw payment method data with JSON payload
+- name: airbyte_raw_disputes
+  description: Raw dispute data with JSON payload
+- name: airbyte_raw_fees
+  description: Raw fee data with JSON payload
+- name: airbyte_raw_refunds
+  description: Raw refund data with JSON payload
+- name: airbyte_raw_payouts
+  description: Raw payout data with JSON payload
+- name: airbyte_raw_mandates
+  description: Raw mandate data with JSON payload
+- name: airbyte_raw_transaction_legs
+  description: Raw transaction legs data with JSON payload

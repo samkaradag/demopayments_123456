@@ -1,0 +1,23 @@
+analysis-paths:
+- analyses
+clean-targets:
+- target
+- dbt_packages
+config-version: 2
+macro-paths:
+- macros
+model-paths:
+- models
+models:
+  demopayments_123456:
+    +materialized: view
+name: demopayments_123456
+profile: demopayments_123456
+seed-paths:
+- seeds
+snapshot-paths:
+- snapshots
+target-path: target
+test-paths:
+- tests
+version: 1.0.0

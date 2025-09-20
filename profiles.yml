@@ -1,0 +1,15 @@
+demopayments_123456:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: MDHXGOY-OP07588
+      user: sametk
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'ACCOUNTADMIN') }}"
+      database: DAGENTEST
+      warehouse: DAGEN_APP_WH
+      schema: PUBLIC
+      threads: 4
+      keepalives_idle: 240
+      search_path: "{{ env_var('SNOWFLAKE_SEARCH_PATH', 'PUBLIC') }}"
